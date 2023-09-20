@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/features/splsh/presentation/views/splsh_view.dart';
 
 void main() {
   runApp(const NewsApp());
@@ -15,6 +16,7 @@ class NewsApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      home: const SplshView(),
     );
   }
 }
