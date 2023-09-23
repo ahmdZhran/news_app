@@ -1,6 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../core/widgets/custom_logo.dart';
+
 class SplshViewBody extends StatefulWidget {
   const SplshViewBody({super.key});
 
@@ -16,12 +18,9 @@ class _SplshViewBodyState extends State<SplshViewBody> {
       children: [
         Row(
           mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
+          children: [
             const SizedBox(width: 20.0, height: 100.0),
-            const Text(
-              'Be',
-              style: TextStyle(fontSize: 43.0),
-            ),
+            const CustomNewsLogo(),
             const SizedBox(width: 20.0, height: 100.0),
             DefaultTextStyle(
               style: const TextStyle(
@@ -30,16 +29,16 @@ class _SplshViewBodyState extends State<SplshViewBody> {
               ),
               child: AnimatedTextKit(
                 animatedTexts: [
-                  RotateAnimatedText('AWESOME',
-                      textStyle: const TextStyle(color: Colors.black)),
-                  RotateAnimatedText('OPTIMISTIC',
-                      textStyle: const TextStyle(color: Colors.black)),
-                  RotateAnimatedText('DIFFERENT',
-                      textStyle: const TextStyle(color: Colors.black)),
+                  RotateAnimatedText(
+                    'AWESOME',
+                  ),
+                  RotateAnimatedText(
+                    'OPTIMISTIC',
+                  ),
+                  RotateAnimatedText(
+                    'DIFFERENT',
+                  ),
                 ],
-                onTap: () {
-                  print("Tap Event");
-                },
               ),
             ),
           ],
