@@ -1,5 +1,7 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import 'package:news_app/core/utlis/app_router.dart';
 import 'package:news_app/core/utlis/text_style.dart';
 
 import '../../../../../core/widgets/custom_logo.dart';
@@ -12,6 +14,14 @@ class SplshViewBody extends StatefulWidget {
 }
 
 class _SplshViewBodyState extends State<SplshViewBody> {
+  @override
+  void initState() {
+    Future.delayed(const Duration(seconds: 6), () {
+      GoRouter.of(context).push(AppRouter.kHomeView);
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
