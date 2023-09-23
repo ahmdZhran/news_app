@@ -1,5 +1,6 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:news_app/core/utlis/text_style.dart';
 
 import '../../../../../core/widgets/custom_logo.dart';
 
@@ -28,15 +29,16 @@ class _SplshViewBodyState extends State<SplshViewBody> {
                 fontFamily: 'Horizon',
               ),
               child: AnimatedTextKit(
+                isRepeatingAnimation: false,
                 animatedTexts: [
                   RotateAnimatedText(
-                    'AWESOME',
+                    'News at Hand',
                   ),
                   RotateAnimatedText(
-                    'OPTIMISTIC',
+                    'Top Headlines',
                   ),
                   RotateAnimatedText(
-                    'DIFFERENT',
+                    'Latest Stories',
                   ),
                 ],
               ),
