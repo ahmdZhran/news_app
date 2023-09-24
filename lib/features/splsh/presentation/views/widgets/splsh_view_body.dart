@@ -57,7 +57,7 @@ class _SplshViewBodyState extends State<SplshViewBody> {
 
   void navigateToHomeView() {
     Future.delayed(const Duration(milliseconds: 8500), () {
-      GoRouter.of(context).push(AppRouter.kHomeView);
+      GoRouter.of(context).push(AppRouter.kInterestsView);
     });
   }
 }

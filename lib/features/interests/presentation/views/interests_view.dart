@@ -8,7 +8,7 @@ class InterstesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Colors.amber,
+      backgroundColor: Color(0xfffBE4E1),
       body: IntersetsViewBody(),
     );
   }
