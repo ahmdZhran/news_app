@@ -15,18 +15,3 @@ abstract class AppRouter {
     ),
   ]);
 }
-// abstract class AppRouter {
-//   static const kHomeView = '/HomeView';
-//   static final router = GoRouter(
-//     routes: [
-//       GoRoute(
-//         path: '/',
-//         builder: (context, state) => const SplshView(),
-//       ),
-//       GoRoute(
-//         path: kHomeView,
-//         builder: (context, state) => const HomeView(),
-//       ),
-//     ],
-//   );
-// }
