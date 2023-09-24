@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'widgets/interstes_view_body.dart';
+import 'widgets/interests_view_body.dart';
 
 class InterstesView extends StatelessWidget {
   const InterstesView({super.key});
