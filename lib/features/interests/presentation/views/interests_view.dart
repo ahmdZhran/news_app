@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/core/utlis/const_colors.dart';
 
 import 'widgets/interests_view_body.dart';
 
@@ -8,7 +9,7 @@ class InterstesView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      backgroundColor: Color(0xfffBE4E1),
+      backgroundColor: kMyPinkColor,
       body: IntersetsViewBody(),
     );
   }
