@@ -16,7 +16,7 @@ class SplshViewBody extends StatefulWidget {
 class _SplshViewBodyState extends State<SplshViewBody> {
   @override
   void initState() {
-    Future.delayed(const Duration(seconds: 6), () {
+    Future.delayed(const Duration(seconds: 8), () {
       GoRouter.of(context).push(AppRouter.kHomeView);
     });
     super.initState();
