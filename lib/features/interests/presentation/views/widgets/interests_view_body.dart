@@ -10,20 +10,39 @@ class IntersetsViewBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: Padding(
-        padding: EdgeInsets.only(left: 30, top: 10, right: 15),
+        padding: EdgeInsets.symmetric(horizontal: 14),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Select Interests',
-              style: StylesOfText.textStyle25,
+            Padding(
+              padding: EdgeInsets.only(top: 10, left: 10),
+              child: Text(
+                'Select Interests',
+                style: StylesOfText.textStyle25,
+              ),
             ),
             SizedBox(
               height: 10,
             ),
-            SelectItem()
+            InterestsListView()
           ],
         ),
+      ),
+    );
+  }
+}
+
+class InterestsListView extends StatelessWidget {
+  const InterestsListView({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Expanded(
+      child: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return const SelectItem();
+        },
       ),
     );
   }
