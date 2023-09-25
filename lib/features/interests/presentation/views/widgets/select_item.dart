@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utlis/const_colors.dart';
 import '../../../../../core/utlis/text_style.dart';
 
 class SelectItem extends StatelessWidget {
@@ -25,7 +26,7 @@ class SelectItem extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: const Color(0xFFF1EFEF),
+                  color: kMyGreyColor,
                   width: 2,
                 ),
               ),
