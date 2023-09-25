@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/core/utlis/text_style.dart';
 
+import 'linterests_list_view.dart';
 import 'select_item.dart';
 
 class IntersetsViewBody extends StatelessWidget {
@@ -27,22 +28,6 @@ class IntersetsViewBody extends StatelessWidget {
             InterestsListView()
           ],
         ),
-      ),
-    );
-  }
-}
-
-class InterestsListView extends StatelessWidget {
-  const InterestsListView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: ListView.builder(
-        itemCount: 20,
-        itemBuilder: (context, index) {
-          return const SelectItem();
-        },
       ),
     );
   }
