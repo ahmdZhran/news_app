@@ -13,18 +13,19 @@ class IntersetsViewBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
-              'Select interests',
+              'Select Interests',
               style: StylesOfText.textStyle25,
+            ),
+            const SizedBox(
+              height: 10,
             ),
             Row(
               children: [
                 Container(
                   height: 60,
                   width: 60,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(
-                      50,
-                    ),
+                  decoration: const BoxDecoration(
+                    shape: BoxShape.circle,
                     color: Colors.white,
                   ),
                 ),
