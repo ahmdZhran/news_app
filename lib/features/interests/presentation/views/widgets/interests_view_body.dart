@@ -45,7 +45,7 @@ class IntersetsViewBody extends StatelessWidget {
                         padding: EdgeInsets.only(left: 20),
                         child: Text(
                           'Health',
-                          style: StylesOfText.textStyle14,
+                          style: StylesOfText.textStyle18,
                         ),
                       ),
                     ),
