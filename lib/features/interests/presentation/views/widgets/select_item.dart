@@ -17,7 +17,7 @@ class SelectItem extends StatelessWidget {
           width: 65,
           decoration: const BoxDecoration(
             shape: BoxShape.circle,
-            color: Colors.white,
+            color: kMyWhiteColor,
           ),
           child: Center(
             child: Container(
