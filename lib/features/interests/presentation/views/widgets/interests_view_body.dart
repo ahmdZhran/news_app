@@ -6,14 +6,52 @@ class IntersetsViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 30),
+        padding: const EdgeInsets.only(left: 30, top: 10, right: 15),
         child: Column(
           children: [
-            Text(
+            const Text(
               'Select interests',
               style: StylesOfText.textStyle25,
+            ),
+            Row(
+              children: [
+                Container(
+                  height: 60,
+                  width: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                      50,
+                    ),
+                    color: Colors.white,
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    height: 60,
+                    decoration: const BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(80),
+                        topLeft: Radius.circular(80),
+                        bottomRight: Radius.circular(80),
+                        topRight: Radius.circular(80),
+                      ),
+                    ),
+                    child: const Align(
+                      alignment: Alignment.centerLeft,
+                      child: Padding(
+                        padding: EdgeInsets.only(left: 20),
+                        child: Text(
+                          'Health',
+                          style: StylesOfText.textStyle14,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             )
           ],
         ),
