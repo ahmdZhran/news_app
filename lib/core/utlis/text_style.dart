@@ -5,8 +5,9 @@ abstract class StylesOfText {
     fontSize: 14,
     fontWeight: FontWeight.normal,
   );
-  static const textStyle18 = TextStyle(
-    fontSize: 18,
+  static const textStyle25 = TextStyle(
+    fontSize: 25,
+    color: Colors.black,
     fontWeight: FontWeight.w600,
   );
 }
