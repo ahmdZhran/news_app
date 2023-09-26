@@ -6,6 +6,7 @@ import '../../../../../core/utlis/text_style.dart';
 class SelectItem extends StatelessWidget {
   const SelectItem({
     super.key,
+    required String title,
   });
 
   @override

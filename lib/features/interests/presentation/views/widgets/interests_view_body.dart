@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:news_app/core/utlis/text_style.dart';
 
 import 'linterests_list_view.dart';
-import 'select_item.dart';
 
 class IntersetsViewBody extends StatelessWidget {
   const IntersetsViewBody({super.key});
