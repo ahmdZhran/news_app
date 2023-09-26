@@ -1,5 +1,5 @@
 class InterestsTitles {
-  final String title;
+  final String titleOfInterests;
 
-  InterestsTitles({required this.title});
+  const InterestsTitles({required this.titleOfInterests});
 }

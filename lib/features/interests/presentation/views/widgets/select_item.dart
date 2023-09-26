@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/features/interests/presentation/views/views_model/titels_model.dart';
 
 import '../../../../../core/utlis/const_colors.dart';
 import '../../../../../core/utlis/text_style.dart';
@@ -6,9 +7,9 @@ import '../../../../../core/utlis/text_style.dart';
 class SelectItem extends StatelessWidget {
   const SelectItem({
     super.key,
-    required String title,
+    required this.interestsTitles,
   });
-
+  final InterestsTitles interestsTitles;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -48,12 +49,12 @@ class SelectItem extends StatelessWidget {
                   topRight: Radius.circular(80),
                 ),
               ),
-              child: const Align(
+              child: Align(
                 alignment: Alignment.centerLeft,
                 child: Padding(
-                  padding: EdgeInsets.only(left: 20),
+                  padding: const EdgeInsets.only(left: 20),
                   child: Text(
-                    'Health',
+                    interestsTitles.titleOfInterests,
                     style: StylesOfText.textStyle18,
                   ),
                 ),
