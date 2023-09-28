@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/core/utlis/const_colors.dart';
+
 import 'package:news_app/core/utlis/text_style.dart';
 
 import 'custom_button.dart';

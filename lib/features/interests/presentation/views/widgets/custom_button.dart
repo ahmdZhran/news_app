@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../core/utlis/text_style.dart';
 
@@ -19,7 +20,9 @@ class CustomButton extends StatelessWidget {
             'Submit',
             style: StylesOfText.textStyle16,
           ),
-          onPressed: () {},
+          onPressed: () {
+            GoRoute
+          },
         ),
       ),
     );
