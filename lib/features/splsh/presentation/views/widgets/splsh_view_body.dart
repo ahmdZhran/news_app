@@ -28,8 +28,8 @@ class _SplshViewBodyState extends State<SplshViewBody> {
           children: [
             const SizedBox(width: 20.0, height: 100.0),
             const CustomNewsLogo(
-              width: 60,
-              hight: 60,
+              width: 65,
+              hight: 65,
               fontSize: 45,
             ),
             const SizedBox(width: 20.0, height: 100.0),
