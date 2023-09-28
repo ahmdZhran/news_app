@@ -40,14 +40,9 @@ class SelectItem extends StatelessWidget {
           Expanded(
             child: Container(
               height: 60,
-              decoration: const BoxDecoration(
+              decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(80),
-                  topLeft: Radius.circular(80),
-                  bottomRight: Radius.circular(80),
-                  topRight: Radius.circular(80),
-                ),
+                borderRadius: BorderRadius.circular(80),
               ),
               child: Align(
                 alignment: Alignment.centerLeft,

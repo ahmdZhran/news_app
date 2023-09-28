@@ -7,6 +7,12 @@ abstract class StylesOfText {
       color: kMyBlackColor,
       fontWeight: FontWeight.w900,
       fontFamily: 'Quicksand');
+  static const textStyle16 = TextStyle(
+    fontSize: 18,
+    color: kMyWhiteColor,
+    fontWeight: FontWeight.w900,
+    fontFamily: 'Quicksand',
+  );
   static const textStyle25 = TextStyle(
     fontSize: 25,
     color: kMyBlackColor,

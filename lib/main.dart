@@ -13,7 +13,7 @@ class NewsApp extends StatelessWidget {
     return MaterialApp.router(
       routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'News app',
       theme: ThemeData.dark().copyWith(
         scaffoldBackgroundColor: Colors.black,
       ),
