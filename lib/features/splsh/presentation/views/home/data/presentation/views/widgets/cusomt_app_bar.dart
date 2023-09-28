@@ -13,7 +13,11 @@ class CusomtAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const CustomNewsLogo(),
+        const CustomNewsLogo(
+          width: 43,
+          hight: 43,
+          fontSize: 30,
+        ),
         const Text(
           'ews',
           style: StylesOfText.textStyle30,

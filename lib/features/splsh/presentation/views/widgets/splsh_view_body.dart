@@ -27,7 +27,11 @@ class _SplshViewBodyState extends State<SplshViewBody> {
           mainAxisSize: MainAxisSize.min,
           children: [
             const SizedBox(width: 20.0, height: 100.0),
-            const CustomNewsLogo(),
+            const CustomNewsLogo(
+              width: 60,
+              hight: 60,
+              fontSize: 45,
+            ),
             const SizedBox(width: 20.0, height: 100.0),
             DefaultTextStyle(
               style: const TextStyle(
