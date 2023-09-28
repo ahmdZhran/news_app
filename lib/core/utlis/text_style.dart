@@ -18,4 +18,9 @@ abstract class StylesOfText {
     color: kMyBlackColor,
     fontWeight: FontWeight.w600,
   );
+  static const textStyle30 = TextStyle(
+    fontSize: 30,
+    color: kMyWhiteColor,
+    fontWeight: FontWeight.w600,
+  );
 }
