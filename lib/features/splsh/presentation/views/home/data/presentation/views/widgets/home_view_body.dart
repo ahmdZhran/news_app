@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/core/utlis/const_colors.dart';
 import 'package:news_app/core/utlis/text_style.dart';
 import 'package:news_app/core/widgets/custom_logo.dart';
+
+import 'custom_search_icon.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});
@@ -23,8 +26,8 @@ class HomeViewBody extends StatelessWidget {
                 const Spacer(),
                 IconButton(
                   onPressed: () {},
-                  icon: const Icon(Icons.search_rounded),
-                )
+                  icon: const CustomSearchIcon(),
+                ),
               ],
             )
           ],
