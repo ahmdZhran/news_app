@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-
+import 'package:news_app/core/utlis/app_router.dart';
 import '../../../../../core/utlis/text_style.dart';
 
 class CustomButton extends StatelessWidget {
@@ -21,7 +21,7 @@ class CustomButton extends StatelessWidget {
             style: StylesOfText.textStyle16,
           ),
           onPressed: () {
-            GoRoute
+            GoRouter.of(context).push(AppRouter.kHomeView);
           },
         ),
       ),
