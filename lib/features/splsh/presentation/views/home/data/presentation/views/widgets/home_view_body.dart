@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/features/search/presentation/views/search_view.dart';
-import 'cusomt_app_bar.dart';
+
+import '../../../../../../../../../core/models/icon_bottom_bar.dart';
+import '../../../../../../../../saved_item/presentation/view/saved_item.dart';
+import '../../../../../../../../search/presentation/views/search_view.dart';
+import 'custom_app_bar.dart';
 
 class HomeViewBody extends StatefulWidget {
   const HomeViewBody({super.key});
@@ -10,155 +13,76 @@ class HomeViewBody extends StatefulWidget {
 }
 
 class _HomeViewBodyState extends State<HomeViewBody> {
-  int _selectedIndex = 0;
+  int selectedIndex = 0;
   final screens = [
+    const TestView(),
     const SearchView(),
+    const SavedItem(),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: Container(
-          decoration: const BoxDecoration(color: Colors.amber),
-          child: SizedBox(
-            height: 80,
-            width: MediaQuery.of(context).size.width,
-            child: Padding(
-              padding: const EdgeInsets.only(left: 25, right: 25),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconBottomBar(
-                    text: 'Home',
-                    icon: Icons.home,
-                    selected: _selectedIndex == 0,
-                    onPressed: () {
-                      setState(() {
-                        _selectedIndex = 0;
-                      });
-                    },
-                  ),
-                  IconBottomBar(
-                    text: 'Add',
-                    icon: Icons.add,
-                    selected: _selectedIndex == 1,
-                    onPressed: () {
-                      setState(() {
-                        _selectedIndex = 1;
-                      });
-                    },
-                  ),
-                  IconBottomBar(
-                    text: 'search',
-                    icon: Icons.access_alarm_rounded,
-                    selected: _selectedIndex == 2,
-                    onPressed: () {
-                      setState(() {
-                        _selectedIndex = 2;
-                      });
-                    },
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-        body: const SafeArea(
+      body: screens[selectedIndex],
+      bottomNavigationBar: Container(
+        decoration: const BoxDecoration(color: Colors.orange),
+        child: SizedBox(
+          height: 80,
+          width: MediaQuery.of(context).size.width,
           child: Padding(
-            padding: EdgeInsets.all(12.0),
-            child: Column(
+            padding: const EdgeInsets.only(left: 25, right: 25),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CusomtAppBar(),
+                IconBottomBar(
+                  text: 'Home',
+                  icon: Icons.home,
+                  selected: selectedIndex == 0,
+                  onPressed: () {
+                    setState(() {
+                      selectedIndex = 0;
+                    });
+                  },
+                ),
+                IconBottomBar(
+                  text: 'Saved',
+                  icon: Icons.save,
+                  selected: selectedIndex == 1,
+                  onPressed: () {
+                    setState(() {
+                      selectedIndex = 1;
+                    });
+                  },
+                ),
+                IconBottomBar(
+                  text: 'search',
+                  icon: Icons.search,
+                  selected: selectedIndex == 2,
+                  onPressed: () {
+                    setState(() {
+                      selectedIndex = 2;
+                    });
+                  },
+                ),
               ],
             ),
           ),
-        ));
+        ),
+      ),
+    );
   }
 }
 
-// class BottomNavigationBar extends StatefulWidget {
-//   const BottomNavigationBar({super.key});
+class TestView extends StatelessWidget {
+  const TestView({super.key});
 
-//   @override
-//   State<BottomNavigationBar> createState() => _BottomNavigationBarState();
-// }
-
-// class _BottomNavigationBarState extends State<BottomNavigationBar> {
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Container(
-//       decoration: const BoxDecoration(color: Colors.amber),
-//       child: SizedBox(
-//         height: 80,
-//         width: MediaQuery.of(context).size.width,
-//         child: Padding(
-//           padding: const EdgeInsets.only(left: 25, right: 25),
-//           child: Row(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: [
-//               IconBottomBar(
-//                 text: 'Home',
-//                 icon: Icons.home,
-//                 selected: _selectedIndex == 0,
-//                 onPressed: () {
-//                   setState(() {
-//                     _selectedIndex = 0;
-//                   });
-//                 },
-//               ),
-//               IconBottomBar(
-//                 text: 'Add',
-//                 icon: Icons.add,
-//                 selected: _selectedIndex == 1,
-//                 onPressed: () {
-//                   setState(() {
-//                     _selectedIndex = 1;
-//                   });
-//                 },
-//               ),
-//               IconBottomBar(
-//                 text: 'search',
-//                 icon: Icons.access_alarm_rounded,
-//                 selected: _selectedIndex == 2,
-//                 onPressed: () {
-//                   setState(() {
-//                     _selectedIndex = 2;
-//                   });
-//                 },
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
-class IconBottomBar extends StatelessWidget {
-  const IconBottomBar(
-      {super.key,
-      required this.text,
-      required this.icon,
-      required this.selected,
-      required this.onPressed});
-  final String text;
-  final IconData icon;
-  final bool selected;
-  final Function() onPressed;
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return const SafeArea(
+        child: Scaffold(
+            body: Column(
       children: [
-        IconButton(
-          onPressed: onPressed,
-          icon: Icon(
-            icon,
-            color: selected ? Colors.white : Colors.blue,
-          ),
-        ),
-        Text(text)
+        CustomAppBar(),
       ],
-    );
+    )));
   }
 }

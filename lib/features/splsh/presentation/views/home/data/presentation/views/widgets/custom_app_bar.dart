@@ -4,8 +4,8 @@ import '../../../../../../../../../core/utlis/text_style.dart';
 import '../../../../../../../../../core/widgets/custom_logo.dart';
 import 'custom_search_icon.dart';
 
-class CusomtAppBar extends StatelessWidget {
-  const CusomtAppBar({
+class CustomAppBar extends StatelessWidget {
+  const CustomAppBar({
     super.key,
   });
 
