@@ -1,5 +1,5 @@
 import 'package:flutter/widgets.dart';
-import '../views_model/titels_model.dart';
+import '../../../../../core/models/titels_model.dart';
 import 'select_item.dart';
 
 class InterestsListView extends StatelessWidget {

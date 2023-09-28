@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/features/interests/presentation/views/views_model/titels_model.dart';
+import 'package:news_app/core/models/titels_model.dart';
 
 import '../../../../../core/utlis/const_colors.dart';
 import '../../../../../core/utlis/text_style.dart';
