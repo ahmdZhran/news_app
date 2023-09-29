@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:news_app/features/splsh/presentation/views/home/data/presentation/views/widgets/home_view_body.dart';
+import 'package:news_app/features/bottom_bar/presentation/view/bottom_navigation_controller.dart.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
@@ -11,6 +11,6 @@ class HomeView extends StatefulWidget {
 class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
-    return const HomeViewBody();
+    return const BottomNavigationController();
   }
 }
