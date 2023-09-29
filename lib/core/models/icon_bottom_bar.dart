@@ -20,7 +20,6 @@ class _IconBottomBarState extends State<IconBottomBar> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         IconButton(
           onPressed: widget.onPressed,
