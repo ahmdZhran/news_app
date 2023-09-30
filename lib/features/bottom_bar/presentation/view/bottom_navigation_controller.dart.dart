@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../../home/data/presentation/views/widgets/home_view_body.dart';
 import '../../../saved_item/presentation/view/saved_item.dart';
 import '../../../search/presentation/views/search_view.dart';
-import '../../../splsh/presentation/views/home/data/presentation/views/widgets/home_view_body.dart';
 
 class BottomNavigationController extends StatefulWidget {
   const BottomNavigationController({Key? key}) : super(key: key);
