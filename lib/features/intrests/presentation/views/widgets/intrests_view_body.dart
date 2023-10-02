@@ -26,22 +26,12 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
   List<InterestsModels> selectedInterests = [];
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      backgroundColor: kMyPinkColor,
-      body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 14),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Select Interests',
-                style: StylesOfText.textStyle25,
-              )
-            ],
-          ),
-        ),
-      ),
-    );
+    return Scaffold(
+        backgroundColor: kMyPinkColor,
+        body: ListView.builder(
+          itemBuilder: (context, index) {
+            return null;
+          },
+        ));
   }
 }
