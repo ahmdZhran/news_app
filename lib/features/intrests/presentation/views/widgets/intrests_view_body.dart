@@ -29,16 +29,16 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
     return const Scaffold(
       backgroundColor: kMyPinkColor,
       body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: EdgeInsets.only(left: 10, right: 10),
-              child: Text(
+        child: Padding(
+          padding: EdgeInsets.symmetric(horizontal: 14),
+          child: Column(
+            children: [
+              Text(
                 'Select Interests',
                 style: StylesOfText.textStyle25,
-              ),
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );
