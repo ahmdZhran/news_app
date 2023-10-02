@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:news_app/features/home/presentation/view/home.dart';
 
+import '../../features/intrests/presentation/views/intrests_view.dart';
 import '../../features/splsh_view/presentaion/view/splsh_view.dart';
 
 abstract class AppRouter {
