@@ -28,13 +28,18 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: kMyPinkColor,
-      body: Column(
-        children: [
-          Text(
-            'Select Interests',
-            style: StylesOfText.textStyle25,
-          )
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 10, right: 10),
+              child: Text(
+                'Select Interests',
+                style: StylesOfText.textStyle25,
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
