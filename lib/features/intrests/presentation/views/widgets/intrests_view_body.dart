@@ -32,6 +32,7 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: 14),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 'Select Interests',
