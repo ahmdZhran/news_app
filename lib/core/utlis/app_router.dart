@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:news_app/features/home/presentation/view/home.dart';
 
 import '../../features/splsh_view/presentaion/view/splsh_view.dart';
 
@@ -13,7 +14,7 @@ abstract class AppRouter {
     ),
     GoRoute(
       path: 'HomeView',
-      builder: (context, state) => const SplshView(),
+      builder: (context, state) => const HomeVeiw(),
     ),
   ]);
 }
