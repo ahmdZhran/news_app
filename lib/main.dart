@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'splsh_view/presentaion/view/splsh_view.dart';
+import 'features/splsh_view/presentaion/view/splsh_view.dart';
 
 void main() {
   runApp(const NewsApp());
@@ -11,13 +11,11 @@ class NewsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: ,
       debugShowCheckedModeBanner: false,
       title: 'News App',
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
-      home: const SplshScreen(),
+      theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black),
     );
   }
 }
