@@ -2,8 +2,14 @@ import 'package:flutter/widgets.dart';
 import '../../../../../core/models/titels_model.dart';
 import 'select_item.dart';
 
-class InterestsListView extends StatelessWidget {
+class InterestsListView extends StatefulWidget {
   const InterestsListView({super.key});
+
+  @override
+  State<InterestsListView> createState() => _InterestsListViewState();
+}
+
+class _InterestsListViewState extends State<InterestsListView> {
   final List<InterestsTitles> titles = const [
     InterestsTitles(titleOfInterests: 'Health'),
     InterestsTitles(titleOfInterests: 'Technology'),
@@ -15,6 +21,9 @@ class InterestsListView extends StatelessWidget {
     InterestsTitles(titleOfInterests: 'Education'),
     InterestsTitles(titleOfInterests: 'E-commerce'),
   ];
+
+  List<InterestsTitles> selectedInterests = [];
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
