@@ -41,7 +41,11 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
                 Expanded(
                   child: ListView.builder(
                     itemBuilder: (context, index) {
-                      return const ListTile();
+                      return const ListTile(
+                        title: Row(
+                          children: [],
+                        ),
+                      );
                     },
                   ),
                 ),
