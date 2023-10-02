@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'features/splsh_view/presentaion/view/splsh_view.dart';
+import 'package:news_app/core/utlis/app_router.dart';
 
 void main() {
   runApp(const NewsApp());
@@ -12,7 +11,7 @@ class NewsApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      routerConfig: ,
+      routerConfig: AppRouter.router,
       debugShowCheckedModeBanner: false,
       title: 'News App',
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: Colors.black),
