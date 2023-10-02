@@ -40,10 +40,32 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
                 ),
                 Expanded(
                   child: ListView.builder(
+                    itemCount: interestsList.length,
                     itemBuilder: (context, index) {
-                      return const ListTile(
+                      return ListTile(
                         title: Row(
-                          children: [],
+                          children: [
+                            Expanded(
+                              child: Container(
+                                height: 60,
+                                decoration: BoxDecoration(
+                                  color: kMyWhiteColor,
+                                  borderRadius: BorderRadius.circular(80),
+                                ),
+                                child: Align(
+                                  alignment: Alignment.centerLeft,
+                                  child: Padding(
+                                    padding: const EdgeInsets.only(left: 10.0),
+                                    child: Text(
+                                      interestsList[index].title,
+                                      style:
+                                          const TextStyle(color: Colors.black),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       );
                     },
