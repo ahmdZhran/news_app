@@ -13,7 +13,11 @@ abstract class AppRouter {
       builder: (context, state) => const SplshView(),
     ),
     GoRoute(
-      path: 'HomeView',
+      path: kInterestsView,
+      builder: (context, state) => const InterestsView(),
+    ),
+    GoRoute(
+      path: kHomeView,
       builder: (context, state) => const HomeVeiw(),
     ),
   ]);
