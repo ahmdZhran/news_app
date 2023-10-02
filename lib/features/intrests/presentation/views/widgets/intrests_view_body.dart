@@ -27,53 +27,93 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: kMyPinkColor,
-        body: SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 14),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const Text(
-                  'Select Interests',
-                  style: StylesOfText.textStyle25,
-                ),
-                Expanded(
-                  child: ListView.builder(
-                    itemCount: interestsList.length,
-                    itemBuilder: (context, index) {
-                      return ListTile(
-                        title: Row(
-                          children: [
-                            Expanded(
+      backgroundColor: kMyPinkColor,
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            const Padding(
+              padding: EdgeInsets.only(left: 25.0),
+              child: Text(
+                'Select Interests',
+                style: StylesOfText.textStyle25,
+              ),
+            ),
+            Expanded(
+              child: ListView.builder(
+                itemCount: interestsList.length,
+                itemBuilder: (context, index) {
+                  return ListTile(
+                    title: Row(
+                      children: [
+                        IconButton(
+                          onPressed: () {},
+                          icon: Container(
+                            height: 65,
+                            width: 65,
+                            decoration: const BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: kMyWhiteColor,
+                            ),
+                            child: Center(
                               child: Container(
-                                height: 60,
+                                height: 50,
+                                width: 50,
                                 decoration: BoxDecoration(
-                                  color: kMyWhiteColor,
-                                  borderRadius: BorderRadius.circular(80),
-                                ),
-                                child: Align(
-                                  alignment: Alignment.centerLeft,
-                                  child: Padding(
-                                    padding: const EdgeInsets.only(left: 10.0),
-                                    child: Text(
-                                      interestsList[index].title,
-                                      style:
-                                          const TextStyle(color: Colors.black),
-                                    ),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: kMyGreyColor,
+                                    width: 2,
                                   ),
                                 ),
                               ),
                             ),
-                          ],
+                          ),
                         ),
-                      );
-                    },
-                  ),
-                ),
-              ],
+                        Expanded(
+                          child: Container(
+                            height: 60,
+                            decoration: BoxDecoration(
+                              color: kMyWhiteColor,
+                              borderRadius: BorderRadius.circular(80),
+                            ),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: Padding(
+                                padding: const EdgeInsets.only(left: 10.0),
+                                child: Text(
+                                  interestsList[index].title,
+                                  style: const TextStyle(color: Colors.black),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              ),
             ),
-          ),
-        ));
+            Padding(
+              padding: const EdgeInsets.only(bottom: 15, left: 20),
+              child: SizedBox(
+                height: 60,
+                width: 380,
+                child: ElevatedButton(
+                  child: const Text(
+                    'Submit',
+                    style: StylesOfText.textStyle16,
+                  ),
+                  onPressed: () {
+                    // GoRouter.of(context).push(AppRouter.kHomeView);
+                  },
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
