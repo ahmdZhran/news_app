@@ -10,7 +10,18 @@ class IntrestsViewBody extends StatefulWidget {
 }
 
 class _IntrestsViewBodyState extends State<IntrestsViewBody> {
-  List<InterestsModels> interestsList = [];
+  List<InterestsModels> interestsList = [
+    InterestsModels('Health', false),
+    InterestsModels('Technology', false),
+    InterestsModels('Finance', false),
+    InterestsModels('Sports', false),
+    InterestsModels('Politics', false),
+    InterestsModels('Business', false),
+    InterestsModels('Fashoin', false),
+    InterestsModels('Education', false),
+    InterestsModels('E-commerce', false),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
