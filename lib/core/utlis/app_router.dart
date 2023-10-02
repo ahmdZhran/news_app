@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/splsh_view/presentaion/view/splsh_view.dart';
@@ -10,5 +11,18 @@ abstract class AppRouter {
       path: '/',
       builder: (context, state) => const SplshView(),
     ),
+    GoRoute(
+      path: 'HomeView',
+      builder: (context, state) => const SplshView(),
+    ),
   ]);
+}
+
+class HomeViewBody extends StatelessWidget {
+  const HomeViewBody({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
+  }
 }
