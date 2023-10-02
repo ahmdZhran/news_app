@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'widgets/splsh_view_body.dart';
 
-class SplshScreen extends StatelessWidget {
-  const SplshScreen({super.key});
+class SplshView extends StatelessWidget {
+  const SplshView({super.key});
 
   @override
   Widget build(BuildContext context) {
