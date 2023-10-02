@@ -21,7 +21,7 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
     InterestsModels('Education', false),
     InterestsModels('E-commerce', false),
   ];
-
+  List<InterestsModels> selectedInterests = [];
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
