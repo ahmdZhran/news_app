@@ -28,10 +28,26 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: kMyPinkColor,
-        body: ListView.builder(
-          itemBuilder: (context, index) {
-            return null;
-          },
+        body: SafeArea(
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 14),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Text(
+                  'Select Interests',
+                  style: StylesOfText.textStyle25,
+                ),
+                Expanded(
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return const ListTile();
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
         ));
   }
 }
