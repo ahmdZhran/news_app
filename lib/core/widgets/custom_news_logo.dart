@@ -16,7 +16,7 @@ class CustomNewsLogo extends StatelessWidget {
       width: width,
       height: hight,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(30),
+        borderRadius: BorderRadius.circular(60),
         color: Colors.white,
       ),
       child: Text(
