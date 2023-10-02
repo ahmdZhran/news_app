@@ -1,6 +1,6 @@
 class InterestsModels {
-  final String title;
-  bool isSelected;
+  String title;
+  bool isSelected = false;
 
-  InterestsModels({required this.title, this.isSelected = false});
+  InterestsModels(this.title, this.isSelected);
 }
