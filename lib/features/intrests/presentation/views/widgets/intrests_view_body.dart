@@ -35,7 +35,9 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Padding(
-              padding: EdgeInsets.only(left: 25.0),
+              padding: EdgeInsets.only(
+                left: 25.0,
+              ),
               child: Text(
                 'Select Interests',
                 style: StylesOfText.textStyle25,
@@ -115,10 +117,10 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 15, left: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               child: SizedBox(
                 height: 60,
-                width: 380,
+                width: double.infinity,
                 child: ElevatedButton(
                   child: const Text(
                     'Submit',
