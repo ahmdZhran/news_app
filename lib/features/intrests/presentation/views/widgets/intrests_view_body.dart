@@ -56,38 +56,35 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
                           IconButton(
                             onPressed: () {},
                             icon: Container(
-                                height: 65,
-                                width: 65,
-                                decoration: const BoxDecoration(
-                                  shape: BoxShape.circle,
-                                  color: kMyWhiteColor,
+                              height: 65,
+                              width: 65,
+                              decoration: const BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: kMyWhiteColor,
+                              ),
+                              child: Center(
+                                child: Container(
+                                  height: 50,
+                                  width: 50,
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    border: Border.all(
+                                      color: interestsList[index].isSelected
+                                          ? kMyBlackColor
+                                          : kMyGreyColor,
+                                      width: 2,
+                                    ),
+                                    color: interestsList[index].isSelected
+                                        ? kMyBlackColor
+                                        : null,
+                                  ),
+                                  child: interestsList[index].isSelected
+                                      ? const Icon(Icons.check,
+                                          color: kMyWhiteColor)
+                                      : null,
                                 ),
-                                child: interestsList[index].isSelected
-                                    ? Center(
-                                        child: Container(
-                                          height: 50,
-                                          width: 50,
-                                          decoration: const BoxDecoration(
-                                            color: kMyBlackColor,
-                                            shape: BoxShape.circle,
-                                          ),
-                                          child: const Icon(Icons.check),
-                                        ),
-                                      )
-                                    : Center(
-                                        child: Container(
-                                          height: 50,
-                                          width: 50,
-                                          decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            border: Border.all(
-                                              color: kMyGreyColor,
-                                              width: 2,
-                                            ),
-                                          ),
-                                        ),
-                                      )),
-                            //
+                              ),
+                            ),
                           ),
                           Expanded(
                             child: Container(
