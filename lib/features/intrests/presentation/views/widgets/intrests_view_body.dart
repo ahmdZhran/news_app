@@ -5,6 +5,7 @@ import 'package:news_app/core/utlis/const_colors.dart';
 import 'package:news_app/models/intrests_models.dart';
 import '../../../../../core/utlis/text_styles.dart';
 import 'custom_intrestes_item.dart';
+import 'custom_submet_button.dart';
 
 class IntrestsViewBody extends StatefulWidget {
   const IntrestsViewBody({super.key});
@@ -102,23 +103,15 @@ class _IntrestsViewBodyState extends State<IntrestsViewBody> {
                 },
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-              child: SizedBox(
-                height: 60,
-                width: double.infinity,
-                child: ElevatedButton(
-                  child: const Text(
-                    'Submit',
-                    style: StylesOfText.textStyle16,
-                  ),
-                  onPressed: () {
-                    GoRouter.of(context)
-                        .go(AppRouter.kHomeView, extra: selectedInterests);
-                  },
-                ),
-              ),
-            ),
+            CustomSubmitButton(
+              label: 'Submit',
+              buttonColor: kMyBlackColor, // Set your button color here
+              onPressed: () {
+                GoRouter.of(context).go(
+                  AppRouter.kHomeView,
+                );
+              },
+            )
           ],
         ),
       ),
