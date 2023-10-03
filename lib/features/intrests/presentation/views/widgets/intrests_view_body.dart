@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:news_app/core/utlis/app_router.dart';
 import 'package:news_app/core/utlis/const_colors.dart';
-import 'package:news_app/features/home/presentation/view/home.dart';
 import 'package:news_app/models/intrests_models.dart';
-
 import '../../../../../core/utlis/text_styles.dart';
-import '../../../../home/presentation/view/widgets/home_view_body.dart';
 
 class IntrestsViewBody extends StatefulWidget {
   const IntrestsViewBody({super.key});
