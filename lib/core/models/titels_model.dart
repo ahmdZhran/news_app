@@ -1,5 +1,12 @@
 class InterestsTitles {
-  final String titleOfInterests;
+  String titleOfInterests;
+  bool isSelected = false;
 
-  const InterestsTitles({required this.titleOfInterests});
+  InterestsTitles(this.titleOfInterests, this.isSelected);
 }
+//class Interest {
+//   String name;
+//   bool isSelected;
+
+//   Interest(this.name, this.isSelected);
+// }
